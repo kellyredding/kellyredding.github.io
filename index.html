@@ -77,7 +77,9 @@
     width:33ch;
     max-width:100%;
     line-height:1;
-    font-size:clamp(13px,3.4vw,21px);
+    /* 33ch x 0.6em = 19.8em must fit the viewport, so rather than guess a vw
+       value this takes the largest size that fits, capped at the desktop 21px. */
+    font-size:min(21px,calc((100vw - 40px) / 19.9));
     margin-top:clamp(30px,6vw,46px);
   }
   .prompt .pre{text-align:right;white-space:nowrap}
@@ -126,23 +128,48 @@
      bottom margin does not collapse — it stacks on nav's top margin. */
   .tagline{
     color:var(--slate);
-    font-size:clamp(12px,2.6vw,14px);
+    font-size:clamp(13.5px,3.6vw,14px);
     margin:clamp(30px,6vw,46px) 0 0;
     text-align:center;
   }
 
+  /* Links are buttons at every width; only the layout changes. Colours come
+     from the palette — no bespoke greys. */
+  .pfx{color:var(--slate)}
+  .lbl{color:var(--offwhite)}
+  .lchev{
+    display:inline-block;width:.6em;height:1em;vertical-align:-.25em;overflow:visible;
+    fill:none;stroke:var(--amber);stroke-width:174;
+    stroke-linecap:round;stroke-linejoin:round;
+    margin-left:auto;
+  }
   nav{
-    display:flex;gap:clamp(18px,5vw,28px);
-    margin-top:clamp(11px,2vw,15px);
-    font-size:clamp(11.5px,2.4vw,12.5px);
+    display:flex;gap:12px;
+    margin-top:clamp(24px,5vw,28px);
+    font-size:13px;
   }
   nav a{
-    color:var(--slate);text-decoration:none;
-    border-bottom:1px solid transparent;padding-bottom:2px;
-    transition:color .15s ease,border-color .15s ease;
+    display:inline-flex;align-items:center;justify-content:flex-start;
+    min-height:44px;padding:0 14px;
+    border:1px solid var(--charcoal);border-radius:6px;background:var(--ink);
+    text-decoration:none;
+    transition:border-color .15s ease;
   }
-  nav a:hover,nav a:focus-visible{color:var(--amber);border-bottom-color:var(--amber)}
+  nav a:hover,nav a:focus-visible{border-color:var(--slate)}
+  nav a:hover .lbl,nav a:focus-visible .lbl{color:var(--amber)}
   nav a:focus-visible{outline:none}
+
+  /* Desktop: equal-width chips so the three read as a set and the chevrons
+     align — the same grid discipline the rest of the page runs on. */
+  @media (min-width:521px){
+    nav a{min-width:132px}
+  }
+
+  /* Phones: stacked, matched to the width of the prompt block above. */
+  @media (max-width:520px){
+    nav{flex-direction:column;align-items:stretch;width:100%;max-width:33ch;gap:9px}
+    nav a{min-height:48px;padding:0 15px;font-size:14px}
+  }
 
   @media (prefers-reduced-motion:reduce){
     .cursor{animation:none}
@@ -174,9 +201,9 @@
   <p class="tagline">one builder. more than enough.</p>
 
   <nav>
-    <a href="https://github.com/kellyredding" target="_blank" rel="noopener">github</a>
-    <a href="mailto:kelly@kellyredding.com">email</a>
-    <a href="https://www.linkedin.com/in/kellyredding-is-kellyredding/" target="_blank" rel="noopener">linkedin</a>
+    <a href="https://github.com/kellyredding" target="_blank" rel="noopener"><span class="pfx">./</span><span class="lbl">github</span><svg class="lchev" viewBox="0 0 1229 2048" aria-hidden="true"><path d="M422 450.5L807 888L422 1325.5"/></svg></a>
+    <a href="https://www.linkedin.com/in/kellyredding-is-kellyredding/" target="_blank" rel="noopener"><span class="pfx">./</span><span class="lbl">linkedin</span><svg class="lchev" viewBox="0 0 1229 2048" aria-hidden="true"><path d="M422 450.5L807 888L422 1325.5"/></svg></a>
+    <a href="mailto:kelly@kellyredding.com"><span class="pfx">./</span><span class="lbl">email</span><svg class="lchev" viewBox="0 0 1229 2048" aria-hidden="true"><path d="M422 450.5L807 888L422 1325.5"/></svg></a>
   </nav>
 </main>
 

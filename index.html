@@ -163,15 +163,19 @@
   nav a:hover .lbl,nav a:focus-visible .lbl{color:var(--amber)}
   nav a:focus-visible{outline:none}
 
-  /* Desktop: equal-width chips so the three read as a set and the chevrons
-     align — the same grid discipline the rest of the page runs on. */
-  @media (min-width:521px){
-    nav a{min-width:132px}
+  /* Wide: equal-width chips so the set reads as one and the chevrons align —
+     the same grid discipline the rest of the page runs on. The width is set by
+     the longest label, ./everyexpert, so every chip matches it. Four of these
+     plus their gaps need ~660px, which is where the breakpoint sits. */
+  @media (min-width:701px){
+    nav a{min-width:150px}
   }
 
-  /* Phones: stacked, matched to the width of the prompt block above. */
-  @media (max-width:520px){
-    nav{flex-direction:column;align-items:stretch;width:100%;max-width:33ch;gap:9px}
+  /* Narrow: stacked and full width. The prompt above is sized to fill the
+     viewport exactly, so matching it means 100% rather than a ch value — a ch
+     here would resolve against nav's own font-size and come up short. */
+  @media (max-width:700px){
+    nav{flex-direction:column;align-items:stretch;width:100%;gap:9px}
     nav a{min-height:48px;padding:0 15px;font-size:14px}
   }
 
@@ -207,6 +211,7 @@
   <nav>
     <a href="https://github.com/kellyredding" target="_blank" rel="noopener"><span class="pfx">./</span><span class="lbl">github</span><svg class="lchev" viewBox="0 0 1229 2048" aria-hidden="true"><path d="M422 450.5L807 888L422 1325.5"/></svg></a>
     <a href="https://www.linkedin.com/in/kellyredding-is-kellyredding/" target="_blank" rel="noopener"><span class="pfx">./</span><span class="lbl">linkedin</span><svg class="lchev" viewBox="0 0 1229 2048" aria-hidden="true"><path d="M422 450.5L807 888L422 1325.5"/></svg></a>
+    <a href="https://everyexpert.com/kellyredding" target="_blank" rel="noopener"><span class="pfx">./</span><span class="lbl">everyexpert</span><svg class="lchev" viewBox="0 0 1229 2048" aria-hidden="true"><path d="M422 450.5L807 888L422 1325.5"/></svg></a>
     <a href="mailto:kelly@kellyredding.com"><span class="pfx">./</span><span class="lbl">email</span><svg class="lchev" viewBox="0 0 1229 2048" aria-hidden="true"><path d="M422 450.5L807 888L422 1325.5"/></svg></a>
   </nav>
 </main>

@@ -35,7 +35,8 @@
   :root{
     --ink:#0B0C0E;
     --charcoal:#16181C;
-    --slate:#7B8391;
+    --line:#2E3440;
+    --slate:#99A1AD;
     --offwhite:#F4F3F0;
     --amber:#FFA62B;
     --mono:'Roboto Mono',ui-monospace,'SF Mono',Menlo,monospace;
@@ -66,7 +67,7 @@
     display:block;
     object-fit:cover;
     filter:saturate(.82) contrast(1.04);
-    box-shadow:0 0 0 1px var(--slate);
+    box-shadow:0 0 0 1px var(--line);
   }
 
   /* Three columns pin the chevron to true centre, so it holds still while the
@@ -152,7 +153,7 @@
   nav a{
     display:inline-flex;align-items:center;justify-content:flex-start;
     min-height:44px;padding:0 14px;
-    border:1px solid var(--charcoal);border-radius:6px;background:var(--ink);
+    border:1px solid var(--line);border-radius:6px;background:var(--ink);
     text-decoration:none;
     transition:border-color .15s ease;
   }

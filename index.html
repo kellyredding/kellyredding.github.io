@@ -24,16 +24,12 @@
 
 <style>
   /* Self-hosted so the page has no third-party requests at all. Subset to
-     printable ASCII: 6.9 KB and 7.5 KB rather than 160 KB of full faces. */
+     printable ASCII: 6.9 KB rather than 77 KB of full face. Only the roman is
+     served — nothing on the page is italic. */
   @font-face{
     font-family:'Roboto Mono';
     src:url('fonts/RobotoMono-Regular.woff2') format('woff2');
     font-weight:400;font-style:normal;font-display:swap;
-  }
-  @font-face{
-    font-family:'Roboto Mono';
-    src:url('fonts/RobotoMono-Italic.woff2') format('woff2');
-    font-weight:400;font-style:italic;font-display:swap;
   }
 
   :root{
@@ -134,7 +130,6 @@
     margin:clamp(30px,6vw,46px) 0 0;
     text-align:center;
   }
-  .tagline em{font-style:italic}
 
   nav{
     display:flex;gap:clamp(18px,5vw,28px);
@@ -176,12 +171,12 @@
    --><span class="cursor" aria-hidden="true"></span></span>
   </div>
 
-  <p class="tagline">one builder. <em>more than enough.</em></p>
+  <p class="tagline">one builder. more than enough.</p>
 
   <nav>
-    <a href="https://github.com/kellyredding">github</a>
+    <a href="https://github.com/kellyredding" target="_blank" rel="noopener">github</a>
     <a href="mailto:kelly@kellyredding.com">email</a>
-    <a href="https://www.linkedin.com/in/kellyredding-is-kellyredding/">linkedin</a>
+    <a href="https://www.linkedin.com/in/kellyredding-is-kellyredding/" target="_blank" rel="noopener">linkedin</a>
   </nav>
 </main>
 

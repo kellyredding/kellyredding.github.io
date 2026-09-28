@@ -20,16 +20,16 @@ Served by GitHub Pages from this repository at **https://kellyredding.com**.
 | `apple-touch-icon.png`, `icon-512.png` | Touch and app icons |
 | `og-image.png` | 1200×630 social share card |
 | `avatar.jpg` | 320×320, JPEG because it is a photograph |
-| `fonts/*.woff2` | Roboto Mono, subset and self-hosted |
+| `fonts/RobotoMono-Regular.woff2` | Roboto Mono, subset and self-hosted |
 | `robots.txt`, `sitemap.xml` | Indexing |
 
-**Around 37 KB on first paint**, and not a single third-party request.
+**Around 30 KB on first paint**, and not a single third-party request.
 
 ## Notes
 
 **Fonts are self-hosted and subset.** Roboto Mono is SIL Open Font Licensed,
-so redistribution is permitted. Subsetting to printable ASCII takes the two
-faces from 160 KB to 14 KB, and self-hosting removes two DNS lookups and two
+so redistribution is permitted. Subsetting to printable ASCII takes the roman
+face from 77 KB to 7 KB, and self-hosting removes two DNS lookups and two
 TLS handshakes from the critical path — which on a page this small was most of
 the load time.
 

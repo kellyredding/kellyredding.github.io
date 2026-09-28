@@ -153,11 +153,13 @@
   nav a{
     display:inline-flex;align-items:center;justify-content:flex-start;
     min-height:44px;padding:0 14px;
-    border:1px solid var(--line);border-radius:6px;background:var(--ink);
+    border:1px solid var(--charcoal);border-radius:6px;background:var(--ink);
     text-decoration:none;
     transition:border-color .15s ease;
   }
-  nav a:hover,nav a:focus-visible{border-color:var(--amber)}
+  /* Hover brightens the border one step, charcoal to line. Nothing else moves.
+     Amber stays off the outline — it is louder than the name above it. */
+  nav a:hover,nav a:focus-visible{border-color:var(--line)}
   nav a:hover .lbl,nav a:focus-visible .lbl{color:var(--amber)}
   nav a:focus-visible{outline:none}
 

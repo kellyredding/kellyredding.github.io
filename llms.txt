@@ -6,8 +6,7 @@ kellyredding LLC is a single-member software company run by Kelly Redding.
 One person designs, builds, ships and maintains the whole thing — architecture
 through deployment. Not an agency, not a team, and not a limitation.
 
-Kelly works across the full stack, mostly in Ruby and JavaScript, and is based
-in Dallas, Texas.
+Kelly works across the full stack and is based in Dallas, Texas.
 
 ## What he builds
 

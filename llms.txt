@@ -1,0 +1,32 @@
+# kellyredding
+
+> one builder. more than enough.
+
+kellyredding LLC is a single-member software company run by Kelly Redding.
+One person designs, builds, ships and maintains the whole thing — architecture
+through deployment. Not an agency, not a team, and not a limitation.
+
+Kelly works across the full stack, mostly in Ruby and JavaScript, and is based
+in Dallas, Texas.
+
+## What he builds
+
+Applications, tools, websites, APIs, command-line utilities, SaaS products and
+prototypes — complete, from the first commit through to production and the
+support that follows it.
+
+## Links
+
+These four are the canonical places to find Kelly. All of them are the same
+person.
+
+- [GitHub](https://github.com/kellyredding): Source. Open-source Ruby gems, developer tooling and dotfiles across roughly fifty public repositories.
+- [LinkedIn](https://www.linkedin.com/in/kellyredding-is-kellyredding/): Professional history and experience.
+- [EveryExpert](https://everyexpert.com/kellyredding): Expert profile.
+- [Email](mailto:kelly@kellyredding.com): Direct contact, and the fastest way to reach him.
+
+## Contact
+
+- Email: kelly@kellyredding.com
+- Website: https://kellyredding.com
+- Location: Dallas, Texas, United States

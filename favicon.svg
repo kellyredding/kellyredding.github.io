@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="krc-t">
+  <title id="krc-t">kellyredding</title>
+  <defs><clipPath id="krc-c"><rect width="512" height="512" rx="80"/></clipPath></defs>
+  <rect width="512" height="512" rx="80" fill="#16181C"/>
+  <g clip-path="url(#krc-c)">
+    <path fill="none" stroke="#FFA62B" stroke-width="92" stroke-linejoin="round" d="M63.5 -90.0 L368.0 256.0 L63.5 602.0"/>
+  </g>
+</svg>

@@ -10,9 +10,10 @@ Kelly works across the full stack and is based in Dallas, Texas.
 
 ## What he builds
 
-Applications, tools, websites, APIs, command-line utilities, SaaS products and
-prototypes — complete, from the first commit through to production and the
-support that follows it.
+Web applications and APIs, native apps for iOS, Android and macOS, developer
+tools, websites, command-line utilities, SaaS products and prototypes —
+complete, from the first commit through to production and the support that
+follows it.
 
 ## Links
 
